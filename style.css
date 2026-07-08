@@ -144,6 +144,11 @@ body::before {
   letter-spacing: 0.1em;
   color: var(--blue);
 }
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-text {
   max-width: 620px;
   color: var(--muted);
@@ -174,6 +179,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(49, 85, 212, 0.3
 .hero-art {
   min-height: 540px;
   position: relative;
+  z-index: 1;
 }
 .orb { position: absolute; border-radius: 50%; filter: blur(0.2px); }
 .orb-one { width: 430px; height: 430px; right: 20px; top: 10px; background: rgba(244, 229, 216, 0.85); }
@@ -216,6 +222,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(49, 85, 212, 0.3
   background: rgba(255,255,255,0.78);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  z-index: 2;
 }
 .profile-image-wrap {
   overflow: hidden;
@@ -347,7 +354,6 @@ footer { padding: 36px 6vw 54px; color: var(--light-muted); text-align: center; 
   }
 }
 
-
 @media (max-width: 980px) {
   .menu-toggle { display: block; }
   .nav-links {
@@ -369,9 +375,27 @@ footer { padding: 36px 6vw 54px; color: var(--light-muted); text-align: center; 
   .nav-links a { padding: 13px; }
   .resume-link { text-align: center; }
   .hero, .split, .education-contact { grid-template-columns: 1fr; }
-  .hero { min-height: auto; padding-top: 70px; }
-  .hero-art { min-height: 520px; order: -1; }
-  .profile-card { left: 50%; bottom: 10px; transform: translateX(-50%); width: min(360px, 88%); }
+  .hero { min-height: auto; padding-top: 70px; gap: 32px; }
+  .hero-copy { z-index: 3; }
+  .hero-art {
+    min-height: auto;
+    order: -1;
+    display: flex;
+    justify-content: center;
+    padding: 14px 0 6px;
+  }
+  .hero-art .orb,
+  .hero-art .line-art,
+  .hero-art .dot-grid {
+    display: none;
+  }
+  .profile-card {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: min(360px, 88%);
+  }
   .profile-image-wrap { height: 390px; }
   .metrics, .project-grid, .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .metric { border-right: 0; border-bottom: 1px solid var(--line); }
@@ -382,15 +406,21 @@ footer { padding: 36px 6vw 54px; color: var(--light-muted); text-align: center; 
 }
 
 @media (max-width: 640px) {
+  body::before { display: none; }
   .site-header { padding: 16px 20px; }
   .section { padding: 72px 20px; }
-  .hero { padding: 62px 20px 72px; }
-  .hero h1 { font-size: 4.2rem; }
+  .hero { padding: 34px 20px 72px; }
+  .hero h1 { font-size: 3.65rem; }
+  .hero h2 { font-size: 1.05rem; line-height: 1.35; letter-spacing: 0.08em; }
+  .hero-text { font-size: 1.06rem; line-height: 1.75; }
+  .hero-actions .btn { width: 100%; }
   .metrics { margin: -34px 20px 0; grid-template-columns: 1fr; }
   .metric { border-bottom: 1px solid var(--line) !important; }
   .metric:last-child { border-bottom: 0 !important; }
   .project-grid, .skills-grid { grid-template-columns: 1fr; }
-  .hero-art { display: block; min-height: 430px; }
-  .profile-card { width: min(310px, 92%); }
-  .profile-image-wrap { height: 330px; }
+  .hero-art { display: flex; min-height: auto; padding: 0; }
+  .profile-card { width: min(320px, 92%); }
+  .profile-image-wrap { height: 300px; }
+  .profile-card figcaption { padding: 14px 14px 8px; }
+  .profile-card figcaption p { font-size: 1rem; }
 }
