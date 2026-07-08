@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arth Patel portfolio - computer science graduate building full-stack, database, and data-driven software applications." />
+  <title>Arth Patel | Software Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Arth Patel home">
+        <span class="brand-mark">AP</span>
+        <span>Arth Patel</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">Resume ↓</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Arth Patel</h1>
+          <h2>Computer Science Graduate</h2>
+          <p class="hero-text">I build scalable software and data-driven applications that solve real-world problems, automate workflows, and turn complex information into practical systems.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View My Work <span>→</span></a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" download="Arth-Patel-Resume.pdf" class="btn secondary">Download Resume <span>↓</span></a>
+          </div>
+          <div class="socials" aria-label="social links">
+            <a href="https://github.com/Arthp2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+            <a href="https://www.linkedin.com/in/arth-p02/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Arthp2002%40gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" data-email-link data-email="Arthp2002@gmail.com" aria-label="Email Arth Patel">Email</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="orb orb-one" aria-hidden="true"></div>
+          <div class="orb orb-two" aria-hidden="true"></div>
+          <div class="line-art" aria-hidden="true"></div>
+          <div class="dot-grid" aria-hidden="true"></div>
+          <figure class="profile-card">
+            <div class="profile-image-wrap">
+              <img src="profile-headshot.jpg" alt="Professional portrait of Arth Patel" class="profile-photo" loading="eager" decoding="async" fetchpriority="high" />
+            </div>
+            <figcaption>
+              <span>Software Developer</span>
+              <p>Backend · Databases · Data-driven tools</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="metrics reveal" aria-label="quick highlights">
+        <div class="metric"><span>5+</span><p>Projects Completed</p></div>
+        <div class="metric"><span>20K+</span><p>Transactions Analyzed</p></div>
+        <div class="metric"><span>5K+</span><p>Loyalty Members Supported</p></div>
+        <div class="metric"><span>3.5</span><p>GPA</p></div>
+      </section>
+
+      <section class="section split" id="about">
+        <div class="section-heading reveal">
+          <span>About</span>
+          <h3>Developer with a strong mix of software, databases, and operations experience.</h3>
+        </div>
+        <div class="about-card reveal">
+          <p>Computer Science graduate from Lindenwood University with hands-on experience building full-stack applications, database systems, automation workflows, and data-driven tools. My work focuses on practical software that improves decision-making, reduces manual effort, and supports real business operations.</p>
+          <p>I enjoy working across the stack—from backend logic and SQL pipelines to user-facing interfaces and deployment—especially when the product solves a real workflow problem.</p>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading centered reveal">
+          <span>Experience</span>
+          <h3>Business operations experience paired with software development.</h3>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2023 — Present</div>
+            <div class="timeline-card">
+              <h4>Store Operations Manager & Inventory Systems Developer</h4>
+              <p class="company">Mini Market · Missouri</p>
+              <p>Developed a Python, PostgreSQL, and SQL-based inventory optimization platform to analyze product movement, sales history, and reorder needs across 2,000+ products.</p>
+              <ul>
+                <li>Led daily retail operations, staff scheduling, vendor coordination, inventory planning, and customer service.</li>
+                <li>Supported loyalty and engagement workflows including reward tracking, campaigns, and point lookup for 5,000+ customers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2021 — 2023</div>
+            <div class="timeline-card">
+              <h4>DoorDash Driver</h4>
+              <p class="company">DoorDash · Missouri</p>
+              <p>Managed high-volume deliveries while maintaining efficiency, time management, route planning, and customer satisfaction in a fast-paced environment.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2018 — 2021</div>
+            <div class="timeline-card">
+              <h4>Shift Leader</h4>
+              <p class="company">Panda Express · Missouri</p>
+              <p>Supervised team members during shifts, supported training, maintained service quality, and assisted with daily operations and inventory preparation.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading centered reveal">
+          <span>Projects</span>
+          <h3>Selected technical work across databases, APIs, analytics, and full-stack development.</h3>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-icon">▣</div>
+            <h4>Mini Market Inventory Optimization Platform</h4>
+            <p>Data-driven retail operations platform consolidating inventory, transactions, and loyalty data across 2,000+ products and 5,000+ customers.</p>
+            <div class="tags"><span>Python</span><span>PostgreSQL</span><span>SQL</span><span>Analytics</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">▤</div>
+            <h4>Broadcast Studio Production Planner</h4>
+            <p>Live-hosted planner for rundown creation, script workflows, and production scheduling with login authentication and script export.</p>
+            <div class="tags"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>AWS Amplify</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">◈</div>
+            <h4>Enterprise Database Quality Audit Tool</h4>
+            <p>SQL and Tableau-based audit system for identifying duplicates, nulls, and schema mismatches across MS SQL and Oracle datasets.</p>
+            <div class="tags"><span>SQL</span><span>Tableau</span><span>MS SQL</span><span>Oracle</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">⌁</div>
+            <h4>API Performance Benchmarking Toolkit</h4>
+            <p>Testing toolkit using C++, Java, REST APIs, and Postman to measure API latency, throughput, and schema response accuracy.</p>
+            <div class="tags"><span>C++</span><span>Java</span><span>REST APIs</span><span>Postman</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon">◎</div>
+            <h4>Codebase Refactoring & Testing Automation</h4>
+            <p>Refactored Python scripts using modular design and PEP 8 standards, then implemented unit tests with a PostgreSQL test environment.</p>
+            <div class="tags"><span>Python</span><span>PostgreSQL</span><span>Testing</span><span>Git</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading centered reveal">
+          <span>Skills</span>
+          <h3>Technical toolkit for building reliable data-backed applications.</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h4>Languages</h4>
+            <p>Java, Python, C++, JavaScript, Go, SQL, HTML, CSS</p>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Backend & APIs</h4>
+            <p>Node.js, Express, REST APIs, GraphQL, authentication, API testing</p>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Databases</h4>
+            <p>PostgreSQL, MS SQL, Oracle, MongoDB, SQL analytics pipelines</p>
+          </div>
+          <div class="skill-card reveal">
+            <h4>Tools & Cloud</h4>
+            <p>Git, GitHub, GitLab, AWS, AWS Amplify, Postman, Tableau, Jira</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-contact" id="contact">
+        <div class="education-card reveal">
+          <span>Education</span>
+          <h3>Lindenwood University</h3>
+          <p>B.A. Computer Science · GPA 3.5 / 4.0</p>
+          <p>August 2021 — May 2025</p>
+        </div>
+        <div class="contact-card reveal">
+          <span>Contact</span>
+          <h3>Let's connect.</h3>
+          <p>Open to conversations around software development, backend systems, databases, and data-driven applications.</p>
+          <div class="contact-actions">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Arthp2002%40gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" data-email-link data-email="Arthp2002@gmail.com" class="btn primary">Email Me</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn secondary">Resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Arth Patel. Built with clean HTML, CSS, and JavaScript.</p>
+    </footer>
+  </div>
+  <div class="email-toast" id="emailToast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
