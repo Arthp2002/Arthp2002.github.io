@@ -723,3 +723,31 @@ footer { padding: 36px 6vw 54px; color: var(--light-muted); text-align: center; 
     height: 260px;
   }
 }
+
+/* Mobile-only order fix: intro first, photo card second.
+   Desktop is untouched because this only applies at phone/tablet width. */
+@media (max-width: 980px) {
+  .hero-copy {
+    order: 1;
+  }
+
+  .hero-art {
+    order: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 0 0 72px;
+  }
+
+  .hero-copy {
+    padding: 46px 20px 0;
+  }
+
+  .hero-art {
+    margin-top: 12px;
+    border-top: 1px solid rgba(228, 232, 242, 0.75);
+    border-bottom: 1px solid rgba(228, 232, 242, 0.75);
+  }
+}
